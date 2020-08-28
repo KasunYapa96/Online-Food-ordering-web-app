@@ -41,6 +41,7 @@ mysqli_close($conn);
     <?php foreach ($pizzas as $pizza) : ?>
         <div class="col s6 md3">
             <div class="card z-depth-0">
+                <img src="img/pizza.jpg" class= "pizza">
                 <div class="card content center">
                     <h6><?php echo $pizza['title']; ?></h6>
                     <ul>
@@ -50,7 +51,7 @@ mysqli_close($conn);
                     </ul>
                 </div>
                 <div class="card-action right-align">
-                    <a href="#" class="brand-text" style="font-size: 20px;">More info</a>
+                    <a class="brand-text" style="font-size: 20px;" href="details.php?id=<?php echo $pizza['id'] ?> ">More info</a>
                 </div>
             </div>
         </div>
